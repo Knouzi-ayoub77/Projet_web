@@ -1,0 +1,259 @@
+.checkout-form__section {
+  padding: 28px 28px 0;
+}
+
+.checkout-form__section:last-of-type {
+  padding-bottom: 28px;
+}
+
+.checkout-form__section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.checkout-form__row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.checkout-form__field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.checkout-form__label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray-text);
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+}
+
+.checkout-form__input {
+  padding: 14px 16px;
+  border: 1.5px solid var(--gray-border);
+  border-radius: 8px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  color: var(--dark);
+  background: var(--white);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+  width: 100%;
+}
+
+.checkout-form__input:focus {
+  border-color: var(--green-mid);
+  box-shadow: 0 0 0 3px rgba(141, 197, 15, 0.15);
+}
+
+/* Phone with country selector */
+.checkout-form__phone-wrapper {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.checkout-form__country-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  border: 1.5px solid var(--gray-border);
+  border-right: none;
+  border-radius: 8px 0 0 8px;
+  background: var(--gray-light);
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  color: var(--dark);
+  white-space: nowrap;
+  transition: background 0.15s;
+}
+
+.checkout-form__country-btn:hover {
+  background: #e8e8e8;
+}
+
+.checkout-form__country-chevron {
+  font-size: 12px;
+  color: var(--gray-text);
+}
+
+.checkout-form__country-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  background: var(--white);
+  border: 1.5px solid var(--gray-border);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+  z-index: 100;
+  overflow: hidden;
+  min-width: 120px;
+}
+
+.checkout-form__country-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  color: var(--dark);
+  transition: background 0.12s;
+}
+
+.checkout-form__country-option:hover {
+  background: var(--gray-light);
+}
+
+.checkout-form__input--phone {
+  border-radius: 0 8px 8px 0;
+  flex: 1;
+}
+
+/* Payment logos */
+.checkout-form__payment-logos {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding: 18px;
+  border: 1.5px solid var(--gray-border);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.payment-badge {
+  padding: 7px 14px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+}
+
+/* Privacy text */
+.checkout-form__privacy {
+  font-size: 13.5px;
+  color: var(--gray-text);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.checkout-form__link {
+  color: var(--green-dark);
+  text-decoration: underline;
+}
+
+/* Submit button */
+.checkout-form__submit {
+  width: 100%;
+  padding: 18px;
+  background: var(--green-btn);
+  border: none;
+  border-radius: 10px;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 0.3px;
+  transition: background 0.2s, transform 0.1s;
+  box-shadow: 0 4px 16px rgba(74, 144, 0, 0.35);
+}
+
+.checkout-form__submit:hover {
+  background: var(--green-btn-hover);
+}
+
+.checkout-form__submit:active {
+  transform: scale(0.98);
+}
+
+.checkout-form__submit-check {
+  font-size: 20px;
+  background: rgba(255,255,255,0.25);
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* Security badges */
+.checkout-form__security-badges {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 30px 28px;
+  border-top: 1px solid var(--gray-border);
+}
+
+.checkout-form__badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 1.2;
+}
+
+.badge-verified {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #1a1f71;
+}
+
+.badge-brand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+.badge-brand--blue {
+  color: #1a1f71;
+  font-style: italic;
+}
+
+.badge-brand--red {
+  color: #e1001a;
+}
+
+.badge-secure {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #f79e1b;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .checkout-form__row {
+    flex-direction: column;
+  }
+
+  .checkout-form__section {
+    padding: 20px 16px 0;
+  }
+
+  .checkout-form__security-badges {
+    gap: 20px;
+  }
+}
