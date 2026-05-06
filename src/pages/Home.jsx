@@ -1,13 +1,13 @@
-import Sidebar from '../components/Sidebar'
-import SelectActivite from '../components/SelectActivite'
+import Navbar from "../components/Home/Navbar";
+import Hero from "../components/Home/Hero";
+import Footer from "../components/Home/Footer";
 
-function Home() {
+export default function Home() {
   return (
-    <div className="booking-wrapper">
-      <Sidebar etapeActive={1} />
-      <SelectActivite />
-    </div>
-  )
+    <>
+      <Navbar />
+      <Hero/>
+      <Footer/>
+    </>
+  );
 }
-
-export default Home

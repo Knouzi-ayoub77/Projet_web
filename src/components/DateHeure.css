@@ -32,7 +32,7 @@
 
 .header-line { height: 2px; background: #eee; border-radius: 99px; }
 
-.calendar-section { display: flex; flex-direction: column; gap: 0.9rem; }
+.calendar-section { display: flex; flex-direction: column; gap: 0.9rem;width: 100%; }
 
 .calendar-controls { display: flex; align-items: center; gap: 0.7rem; }
 
@@ -108,7 +108,7 @@
 .cal-day.available:hover { background: #3a5fd9; color: #fff; }
 .cal-day.available.selected { background: #1e3fa0; color: #fff; box-shadow: 0 3px 10px rgba(30,63,160,0.3); }
 
-.horaires-section { display: flex; flex-direction: column; gap: 0.8rem; }
+.horaires-section { display: flex; flex-direction: column; gap: 0.8rem; width: 100%; }
 .horaires-section.hidden { display: none; }
 .horaires-date { font-size: 0.9rem; font-weight: 700; color: #2a3a18; }
 

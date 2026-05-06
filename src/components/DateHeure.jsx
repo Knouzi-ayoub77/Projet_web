@@ -5,7 +5,7 @@ import { initCalendrier } from './calendrier'//supprimer
 
 function DateHeure() {
   const navigate = useNavigate()
-    // Lance le calendrier après que le composant est affiché
+  // Lance le calendrier après que le composant est affiché
   useEffect(() => {
     initCalendrier()
   }, [])
@@ -14,9 +14,9 @@ function DateHeure() {
     <main className="booking-main-date">
 
       <div className="form-header-date">
-        <button className="btn-back" onClick={() => navigate('/')}>
+        <button className="btn-back" onClick={() => navigate('/selection-terrain')}>
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5">
-            <path d="M15 18l-6-6 6-6"/>
+            <path d="M15 18l-6-6 6-6" />
           </svg>
         </button>
         <h1>Date et heure</h1>
@@ -42,7 +42,7 @@ function DateHeure() {
               <option value="11">décembre</option>
             </select>
             <svg className="select-arrow-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M6 9l6 6 6-6"/>
+              <path d="M6 9l6 6 6-6" />
             </svg>
           </div>
 
@@ -53,19 +53,19 @@ function DateHeure() {
               <option value="2027">2027</option>
             </select>
             <svg className="select-arrow-cal" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <path d="M6 9l6 6 6-6"/>
+              <path d="M6 9l6 6 6-6" />
             </svg>
           </div>
 
           <div className="nav-arrows">
             <button className="nav-btn" id="prev-month">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M15 18l-6-6 6-6"/>
+                <path d="M15 18l-6-6 6-6" />
               </svg>
             </button>
             <button className="nav-btn" id="next-month">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M9 18l6-6-6-6"/>
+                <path d="M9 18l6-6-6-6" />
               </svg>
             </button>
           </div>
@@ -95,7 +95,7 @@ function DateHeure() {
       </div>
 
       <div className="form-actions-date">
-        <button className="btn-continuer-date" onClick={() => navigate('/informations')}>
+        <button className="btn-continuer-date" onClick={() => navigate('/reservation')}>
           Continuer
         </button>
       </div>
