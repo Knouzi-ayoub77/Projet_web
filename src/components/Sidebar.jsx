@@ -1,6 +1,7 @@
 import './Sidebar.css'
 
 function Sidebar({ etapeActive }) {
+  
   const etapes = [
     {
       id: 1,

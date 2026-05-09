@@ -3,8 +3,12 @@ import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 function SelectActivite2() {
+
+
     const navigate = useNavigate()
+
     const [selectedTerrain, setSelectedTerrain] = useState(null)
+
     const [selectedVille, setSelectedVille] = useState('all')
     const [selectedActivite, setSelectedActivite] = useState('')
 
@@ -131,6 +135,7 @@ function SelectActivite2() {
         { value: 'fitness', label: 'Fitness' }
     ]
 
+
     // Filtrer les terrains
     const filteredTerrains = terrains.filter(terrain => {
         const matchVille = selectedVille === 'all' || terrain.ville === selectedVille
@@ -142,6 +147,7 @@ function SelectActivite2() {
         setSelectedTerrain(selectedTerrain === terrainId ? null : terrainId)
     }
 
+    
     const handleContinue = () => {
         if (selectedTerrain) {
             const terrainData = terrains.find(t => t.id === selectedTerrain)
@@ -169,10 +175,10 @@ function SelectActivite2() {
                         <select
                             value={selectedActivite}
                             onChange={(e) => setSelectedActivite(e.target.value)}
-                        >
-                            {activites.map(act => (
+                        > //gere les evenements
+                            {activites.map((act) => (
                                 <option key={act.value} value={act.value}>{act.label}</option>
-                            ))}
+                            ))} //Remplissage dynamique des options d'activités
                         </select>
                         <svg className="select-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                             <path d="M6 9l6 6 6-6" />
@@ -197,11 +203,7 @@ function SelectActivite2() {
                     </div>
                 </div>
 
-                <div className="filter-stats">
-                    <span className="stats-badge">
-                        {filteredTerrains.length} terrain{filteredTerrains.length > 1 ? 's' : ''} disponible{filteredTerrains.length > 1 ? 's' : ''}
-                    </span>
-                </div>
+                
             </div>
 
             {/* Grille des terrains */}
@@ -285,6 +287,7 @@ function SelectActivite2() {
                     Continuer
                 </button>
             </div>
+            
         </main>
     )
 }
