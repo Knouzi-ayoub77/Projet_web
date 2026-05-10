@@ -1,6 +1,7 @@
 import './SelectActivite2.css'
 import { useNavigate } from 'react-router-dom'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
+import { getAllStades } from '../api/stades.api';
 
 function SelectActivite2() {
 
